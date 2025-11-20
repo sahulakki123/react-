@@ -1,4 +1,4 @@
-import React from "react";
+
 
 const Footer=()=>{
     return(
@@ -7,4 +7,18 @@ const Footer=()=>{
         </div>
     )
 }
-export default Footer
+
+
+
+
+
+
+
+const Footer2=()=>{
+    return(
+        <div>
+            <h1>Footer2</h1>
+        </div>
+    )
+}
+export {Footer,Footer2}
