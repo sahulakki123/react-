@@ -1,0 +1,48 @@
+/* Swiper Container */
+.mySwiper {
+  width: 100%;
+  padding: 40px 0;
+}
+
+/* Slide Centering */
+.mySwiper .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Image Styling */
+.mySwiper .swiper-slide img {
+  width: 90%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 18px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  transition: 0.3s ease;
+}
+
+/* Hover Effect */
+.mySwiper .swiper-slide img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
+}
+
+/* Tablet Responsive */
+@media (max-width: 768px) {
+  .mySwiper .swiper-slide img {
+    height: 200px;
+    width: 95%;
+  }
+}
+
+/* Mobile Responsive */
+@media (max-width: 480px) {
+  .mySwiper {
+    padding: 20px 0;
+  }
+
+  .mySwiper .swiper-slide img {
+    height: 160px;
+    width: 100%;
+  }
+}
