@@ -1,17 +1,18 @@
 
 
-const Child = ({mydata}) => {
+const Child = ({name,age,city, im}) => {
 
 
   return (
     <>
     <h1>Home Child</h1>
-    <div style={{border:'5px'}}>
+    <div className="border-2 w-40 justify-around hover:bg-gray-400 cursor-pointer">
 
+    <img src={im} alt="" className="w-2xl flex" />
     
-    <p>My name is {mydata.name}</p>
-    <p>My age is {mydata.age}</p>
-    <p>My city is {mydata.city}</p>
+    <p>My name is {name}</p>
+    <p>My age is {age}</p>
+    <p>My city is {city}</p>
     </div>
     
     </>

@@ -1,10 +1,11 @@
-import React from 'react'
+import React, { Children } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import Layout from './Layout'
 import About from './About.jsx'
 import Contact from './Contact.jsx'
 import Home from './Home.jsx'
 import Service from './Service.jsx'
+
 
 const Router = () => {
   return (
@@ -18,6 +19,7 @@ const Router = () => {
 
             </Route>
     </Routes>
+    
 
     </>
   )
