@@ -40,11 +40,9 @@ const Form = () => {
           localStorage.setItem('name',form.name)
           localStorage.setItem('email',form.email)
           localStorage.setItem('number',form.number)
-          Navigate('/Home')
+          Navigate("/Home")
 
-        }
-
-    }
+        } }
 
 
 
