@@ -1,10 +1,13 @@
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 
 const Form = () => {
 
     // let [name, setname] = useState("")
     // let [email, setemail] = useState("")
     // let [num, setnum] = useState("")
+
+    let  Navigate = useNavigate()
 
     let [form, setform] = useState({
       name : "",
@@ -17,12 +20,28 @@ const Form = () => {
     }
 
 
-
+    
+    
     let Handeling=(e)=>{
-        e.preventDefault()
-        if (form.name.trim()==""){
+      e.preventDefault()
 
+
+      let valid = true
+        if (form.name.trim()==""){
           alert("Name cannot be empty")
+          valid=false
+        }
+        else if(form.name.trim()==""){
+          alert("please enter number")
+          valid=false
+        }
+        if (valid){
+          alert("Log in submmited ")
+          localStorage.setItem('name',form.name)
+          localStorage.setItem('email',form.email)
+          localStorage.setItem('number',form.number)
+          Navigate('/Home')
+
         }
 
     }
